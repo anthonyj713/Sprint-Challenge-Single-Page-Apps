@@ -22,12 +22,8 @@ const [char, charData] = useState([]);
 
   return (
     <Container>
-      <SearchForm />
       <Row>
-          {console.log(char)}
-          {char.map(people => {
-      return <CharacterCard people={people} key={people.results} />;
-    })}
+    <SearchForm />
       </Row>
      </Container>
   );

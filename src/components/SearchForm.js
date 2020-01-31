@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-
+import CharacterCard from './CharacterCard';
 
 export default function SearchForm() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -28,6 +28,9 @@ export default function SearchForm() {
         value={searchTerm}
         onChange={handleChange}
       /> 
+      {searchResults.map(people => {
+        return <CharacterCard people={people}/>
+      })}
       {console.log('searchresults', searchResults)}
       </div>
     </section>
