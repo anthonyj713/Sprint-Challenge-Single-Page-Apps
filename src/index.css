@@ -37,3 +37,12 @@ main {
 header h1 {
   text-align: center;
 }
+.card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border:2px solid black;
+  padding: 1%;
+  margin: 2%;
+
+}

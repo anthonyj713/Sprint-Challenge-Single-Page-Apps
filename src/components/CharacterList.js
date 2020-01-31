@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Container, Row } from "reactstrap";
-import CharacterCard from './CharacterCard';
 import SearchForm from './SearchForm';
 
 export default function CharacterList() {
