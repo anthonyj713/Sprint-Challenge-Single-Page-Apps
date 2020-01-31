@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Container, Row } from "reactstrap";
 import CharacterCard from './CharacterCard';
+import SearchForm from './SearchForm';
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -21,6 +22,7 @@ const [char, charData] = useState([]);
 
   return (
     <Container>
+      <SearchForm />
       <Row>
           {console.log(char)}
           {char.map(people => {

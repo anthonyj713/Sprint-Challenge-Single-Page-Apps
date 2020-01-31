@@ -1,5 +1,6 @@
 import React from "react";
 import CharacterList from './CharacterList';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 export default function WelcomePage() {
   return (
@@ -12,7 +13,9 @@ export default function WelcomePage() {
           alt="rick"
         />
       </header>
+      <Router>
       <CharacterList/>
+      </Router>
     </section>
   );
 }
