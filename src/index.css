@@ -46,3 +46,10 @@ header h1 {
   margin: 2%;
 
 }
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}

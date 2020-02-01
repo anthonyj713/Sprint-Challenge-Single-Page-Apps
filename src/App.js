@@ -1,22 +1,23 @@
 import React from "react";
 import Header from "./components/Header.js";
 import WelcomePage from './components/WelcomePage';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import CharacterList from './components/CharacterList';
 
 export default function App() {
   return (
-    <main>
-      <Header />
-      <WelcomePage />
-    </main>
-
-<Route exact path="/">
-  <Home />
+    <> 
+   <main>
+  <Header />
+ 
+ <Route exact path="/">
+  <WelcomePage />
 </Route>
 
-<Route exact path="/characters">
-    <CharacterList />
+<Route path="/characterList">
+  <CharacterList />
 </Route>
+</main>
+</>
   );
 }
