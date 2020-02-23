@@ -1,4 +1,6 @@
 import React from "react";
+import CharacterList from './CharacterList';
+import {Route} from 'react-router-dom';
 
 export default function WelcomePage() {
   return (
@@ -11,6 +13,9 @@ export default function WelcomePage() {
           alt="rick"
         />
       </header>
+      <Route>
+        <CharacterList/>
+      </Route>
     </section>
   );
 }
